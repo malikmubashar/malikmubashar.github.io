@@ -1,27 +1,39 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --bd-rgb: 0 115 230;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root[class="light"] {
+    --py-rgb: 255 255 255;
+    --sy-rgb: 230 230 230;
+    --cl-rgb: 19 13 6;
+}
+
+:root[class="dark"] {
+    --py-rgb: 19 13 6;
+    --sy-rgb: 68 59 59;
+    --cl-rgb: 255 255 255;
+}
+
+* {
+    @apply ring-bd/50 border-cl/10;
+
+    &::selection {
+        background-color: color-mix(in srgb, rgb(var(--bd-rgb)) 50%, rgb(var(--sy-rgb)) 55%);
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply h-screen bg-py text-cl;
+
+    >main {
+        @apply min-h-screen;
+    }
+}
+
+*[data-child].active {
+    @apply scale-[2.5] p-4 shadow-2xl shadow-cl/10 bg-cl/20 opacity-100;
 }
