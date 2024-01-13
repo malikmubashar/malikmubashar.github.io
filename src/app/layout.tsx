@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from 'next';
-import HTML from '@/components/html';
-import StoreWrapper from '@/components/store';
+import HTML from '@/components/html-wrapper';
+import StoreWrapper from '@/components/store-wrapper';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import "./client"
@@ -21,9 +21,9 @@ export default function RootLayout({
     <StoreWrapper>
       <HTML>
         <body>
-          <Header />
-          {children}
-          <Footer />
+            <Header />
+            {children}
+            <Footer />
         </body>
       </HTML>
     </StoreWrapper>

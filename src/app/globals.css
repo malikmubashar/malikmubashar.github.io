@@ -34,6 +34,11 @@ body {
     }
 }
 
+header:has(+.home-page) {
+    @apply  bg-py/5 backdrop-blur;
+
+}
+
 *[data-child].active {
     @apply scale-[2.5] p-4 shadow-2xl shadow-cl/10 bg-cl/20 opacity-100;
 }

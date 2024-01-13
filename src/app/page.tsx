@@ -5,7 +5,7 @@ import AboutWebsite from "./components/about-website";
 
 export default function Page() {
   return (
-    <main className="[&>*]:min-h-screen">
+    <main className="[&>*]:min-h-screen home-page">
       <Intro />
       <Services />
       <Projects />

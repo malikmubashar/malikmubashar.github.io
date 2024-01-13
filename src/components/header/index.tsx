@@ -2,6 +2,12 @@ import Link from "next/link";
 import ProfileButton from "../profile-button";
 import MenuButton from "../menu-button";
 import ListWrapper from "./list-wrapper";
+import { Satisfy } from "next/font/google";
+
+const font = Satisfy({
+    weight: "400",
+    preload: false,
+});
 
 export default function Header() {
     const lists = [
@@ -23,8 +29,8 @@ export default function Header() {
         }
     ];
     return (
-        <header className="p-2 pt-3 shadow-xl shadow-bd/5 flex ">
-            <h1>Mubashar</h1>
+        <header className="p-3 pt-3 shadow-2xl shadow-bd/5 flex ">
+            <h1 style={font.style} className="grid place-content-center px-2 -rotate-6">PortFolio</h1>
             <nav className="flex items-center justify-end sm:justify-between w-full">
                 <ListWrapper>
                     {lists.map(({ title, href }, index) => (

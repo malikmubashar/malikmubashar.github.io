@@ -16,8 +16,7 @@ export default function RotatingSlider({ children, duration = 3000, className = 
                 style: {
                     rotate: `${i * -angle}deg`
                 },
-                // children: []
-            }, <><Fragment>{childrenArray[i]}</Fragment>, <Fragment>{childrenArray[i + pairs]}</Fragment></>));
+            }, <><Fragment>{childrenArray[i]}</Fragment><Fragment>{childrenArray[i + pairs]}</Fragment></>));
         };
 
     return (
