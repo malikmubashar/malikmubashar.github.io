@@ -12,7 +12,7 @@ export default function Projects() {
     const projects = [
         {
             title: "MS Excel Clone",
-            shortDescription: "In development stage...",
+            shortDescription: "In development stage coming soon...",
         }
     ];
     return (
