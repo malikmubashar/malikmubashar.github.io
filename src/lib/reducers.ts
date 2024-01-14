@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     theme: {
-        current: "light"
+        current: "dark"
     },
     header: {
         mobileToggle: false
@@ -17,8 +17,8 @@ const app = createSlice({
         setTheme: function (state, { payload }) {
             state.theme.current = payload;
         },
-        toggleMobileMenu: function (state) {
-            state.header.mobileToggle = !state.header.mobileToggle;
+        toggleMobileMenu: function (state, actions) {
+            state.header.mobileToggle = actions.payload == "auto" ? !state.header.mobileToggle : actions.payload;
         },
         setCurrentRotate: function (state, { payload }) {
             state.currentRotate = payload;

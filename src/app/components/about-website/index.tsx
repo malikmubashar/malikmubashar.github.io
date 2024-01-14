@@ -42,11 +42,13 @@ export default function AboutWebsite() {
 
 
   return (
-    <section className='my-10'>
-      <h2 className='text-center font-bold text-xs text-bd drop-shadow opacity-80 p-2'>About This Website</h2>
+    <section className="min-h-screen">
+      <h2 className='text-center font-bold text-xs text-bd drop-shadow opacity-80 py-6'>About This Website</h2>
 
       <div className='h-full relative'>
-        <div className='flex justify-end items-center min-h-[60vh] overflow-hidden'>
+        <div className='flex justify-end items-center overflow-hidden' style={{
+          minHeight: "60vh"
+        }}>
           <RotatingSlider transitionDuration={3000} duration={4000}>
             {technologies.map(({ title, image }, index) => (
               <span key={index} className="w-14 h-14 bg-py rounded-full transition-all duration-1000 scale-75 p-2 opacity-40" >
@@ -56,12 +58,12 @@ export default function AboutWebsite() {
           </RotatingSlider>
         </div>
         <DetailShow data={technologies} />
-        <ul className="p-5 flex flex-wrap justify-evenly gap-6 opacity-70">
+        {/* <ul className="p-6 flex flex-wrap justify-evenly gap-6 opacity-70">
           <li className="flex items-center gap-x-9 p-2">
             <WatchLaterTwoTone />
             <span className="text-cl/70">3 to 4 day to complete</span>
           </li>
-        </ul>
+        </ul> */}
       </div>
 
     </section>

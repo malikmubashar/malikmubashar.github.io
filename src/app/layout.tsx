@@ -4,7 +4,6 @@ import HTML from '@/components/html-wrapper';
 import StoreWrapper from '@/components/store-wrapper';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import "./client"
 
 
 export const metadata: Metadata = {

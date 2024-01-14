@@ -10,7 +10,7 @@ export default function Expand({ children }: { children?: React.ReactNode }) {
                 {expanded ? "Hide" : "See More"}
             </div>
             {expanded && (
-                <div className="text-sm p-2 absolute bg-py backdrop-blur-3xl -translate-y-10 bottom-0 min-h-40 ring-1 ring-sy text-cl/60 w-full z-10">
+                <div className="text-sm p-2 absolute bg-py -translate-y-10 bottom-0 min-h-40 ring-1 ring-sy/50 text-cl/60 w-full z-10">
                     <ShowLoading fallback={<>{children}</>} show={expanded} duration={400} height="100px" />
                 </div>
             )}

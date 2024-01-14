@@ -12,6 +12,7 @@ type ProjectShowcaseBoxProps = {
 
 export default function ProjectShowcaseBox(props: ProjectShowcaseBoxProps) {
     const { title, shortDescription, description, image, viewLink, sourceLink } = props;
+
     return (
         <div className="bg-py w-[min(100%,300px)] rounded-lg border">
             {image && (<img src={image} alt="png" className=" rounded-t-[inherit] border-b w-full aspect-video object-cover" />)}

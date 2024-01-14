@@ -1,4 +1,4 @@
-import { GitHub } from '@mui/icons-material';
+// import { GitHub } from '@mui/icons-material';
 import ThemeButton from '../theme-button';
 
 export default function Footer() {
@@ -19,15 +19,14 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex justify-around text-xs items-center py-1.5 bg-bd/20 border-t'>
-                <p>2023 Copyright - All Right Reserved</p>
-                <div>
+            <div className='w-full flex justify-around text-[10px] items-center py-1.5 bg-bd/20 border-t'>
+                <p className='opacity-50'>2023 Copyright - All Right Reserved</p>
+                {/* <div>
                     <a href="#github">
                         <GitHub className='text-xl' />
                     </a>
-                </div>
+                </div> */}
             </div>
         </footer>
     )
 }
-// https://www.google.com/url?sa=i&url=https%3A%2F%2Fonaircode.com%2Fcreative-website-footer-ui-design%2F&psig=AOvVaw1Qtgwqu4TBR3BGl_dQWsyY&ust=1704991695034000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNDd6p6j04MDFQAAAAAdAAAAABAD

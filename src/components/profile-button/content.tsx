@@ -9,7 +9,7 @@ export default function ProfileContent() {
             </span>
             <div className='flex flex-col items-center gap-y-1 p-3'>
                 <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/f1303c589e5a41006ba336ee41526ded-1704776371170/c753436b-8231-405f-8958-5d4f6562fa46.png" alt="Mubashar" className='rounded-full border p-0.5 border-bd/20 h-24 w-24 hover:p-0 transition-all duration-500 object-cover' />
-                <h1 className='font-semibold text-lg'>Mubashar</h1>
+                <h1 className='font-semibold text-lg text-center'>Muhammad Mubashar Khalid</h1>
                 <p className='pb-6 text-sm text-cl/70'>
                     Full Stack Web Developer .
                 </p>
