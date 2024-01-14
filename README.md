@@ -1,2 +1,4 @@
 
-(url)[https://malikmubashar.github.io]
+#Profile of Mubashar
+
+view (live)[https://malikmubashar.github.io].
