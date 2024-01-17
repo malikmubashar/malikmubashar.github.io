@@ -14,9 +14,9 @@ export default function ProfileContent() {
                     Full Stack Web Developer .
                 </p>
                 <div className='flex text-sm gap-x-1 items-center [&:hover>div]:bg-bd'>
-                    <a href="https://www.fiverr.com/mmubashar01?public_mode=true" className='border p-1.5 rounded bg-bd/70 hover:bg-sy/30 transition-all hover:scale-105'>Contact Me</a>
+                    <a href="/contact" className='border p-1.5 rounded bg-bd/70 hover:bg-sy/30 transition-all hover:scale-105'>Contact Me</a>
                     <div className='bg-sy border opacity-20 h-3'></div>
-                    <a href="#github" className='p-1.5 border rounded hover:bg-bd/30 hover:border-bd/50 transition-all hover:scale-105'>View GitHub</a>
+                    <a href="https://github.com/malikmubashar" className='p-1.5 border rounded hover:bg-bd/30 hover:border-bd/50 transition-all hover:scale-105'>View GitHub</a>
                 </div>
             </div>
             <div className='bg-sy/40 p-2 pb-3'>

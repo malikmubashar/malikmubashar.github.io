@@ -1,6 +1,6 @@
 import { Javascript, ElectricalServices, Code } from '@mui/icons-material';
 
-export default function Services() {
+export default function Experties() {
 
   const services = [
     {
@@ -15,14 +15,14 @@ export default function Services() {
     },
     {
       title: "API Development",
-      description: "I can develop robust REST APIs using Node.js, Express, and MongoDB.",
+      description: "I can develop robust REST APIs using Next.js and MongoDB.",
       icon: <ElectricalServices />
     }
   ];
 
   return (
     <section>
-      <h2 className=" text-center font-bold text-xs drop-shadow p-2 opacity-80">Services</h2>
+      <h2 className=" text-center font-bold text-xs drop-shadow p-2 opacity-80">Experties</h2>
       <div className="flex flex-col gap-y-6 w-[min(100%,800px)] mx-auto p-6">
         {services.map((service, idx) => (
           <div key={idx} className="w-full sm:w-1/2 [&:nth-child(even)]:self-end">

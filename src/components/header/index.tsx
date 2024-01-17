@@ -21,6 +21,10 @@ export default function Header() {
             href: "/#projects",
         },
         {
+            title: "About",
+            href: "/#aboutme",
+        },
+        {
             title: "Contact",
             href: "/contact",
         }

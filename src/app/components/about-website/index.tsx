@@ -1,6 +1,7 @@
 import RotatingSlider from "@/components/rotating-slider";
 import DetailShow from "./detail-show";
-import { WatchLaterTwoTone } from '@mui/icons-material';
+import Link from "next/link";
+import { GitHub } from '@mui/icons-material';
 
 export default function AboutWebsite() {
   const technologies = [
@@ -43,9 +44,9 @@ export default function AboutWebsite() {
 
   return (
     <section className="min-h-screen">
-      <h2 className='text-center font-bold text-xs text-bd drop-shadow opacity-80 py-6'>About This Website</h2>
+      <h2 className='text-center font-bold text-xs text-bd drop-shadow opacity-80 py-6'>Made by using</h2>
 
-      <div className='h-full relative'>
+      <div className='h-full w-full relative'>
         <div className='flex justify-end items-center overflow-hidden' style={{
           minHeight: "60vh"
         }}>
@@ -58,12 +59,12 @@ export default function AboutWebsite() {
           </RotatingSlider>
         </div>
         <DetailShow data={technologies} />
-        {/* <ul className="p-6 flex flex-wrap justify-evenly gap-6 opacity-70">
-          <li className="flex items-center gap-x-9 p-2">
-            <WatchLaterTwoTone />
-            <span className="text-cl/70">3 to 4 day to complete</span>
-          </li>
-        </ul> */}
+        <div className="grid place-content-center">
+          <Link className="p-2 border rounded-xl transition-all flex gap-x-2 text-sm items-center hover:border-bd/50 text-bd shadow-xl shadow-bd/5 active:shadow-none hover:bg-bd/10" href='https://github.com/malikmubashar/malikmubashar.github.io'>
+            View Source
+            <GitHub className="text-sm" />
+          </Link>
+        </div>
       </div>
 
     </section>

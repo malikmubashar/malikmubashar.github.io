@@ -4,7 +4,7 @@ export default function Intro() {
     <section className="min-h-screen full-h relative flex flex-col justify-center">
       <div className="w-20 h-20 bg-bd rounded-br-full blur-3xl shadow-2xl shadow-bd absolute top-0"></div>
       <div>
-        <div className="p-4 pb-0 opacity-50 text-xs">Welcome to,</div>
+        <div className="p-4 pb-0 opacity-50 text-xs">Welcome to</div>
         <div className="drop-shadow-2xl text-center font-bold text-nowrap p-6 pt-0 tracking-wider back-in-down" style={{
           fontSize: "12vw"
         }}>

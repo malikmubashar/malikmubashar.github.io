@@ -52,11 +52,26 @@ header:has(+.home-page) {
     @apply scale-[2.5] p-4 shadow-2xl shadow-cl/10 bg-cl/20 opacity-100;
 }
 
-.back-in-down {
-    animation: bounceInDown 800ms linear;
+@layer components {
+    .stroke-effect {
+        --line: 50px;
+        --line-offset: 1px;
+        @apply relative
+    }
+
+    .stroke-effect::before {
+        clip-path: circle(var(--line) at 0% 0%);
+        @apply content-[''] absolute -inset-[--line-offset] border border-bd/50 rounded-[inherit] transition-all;
+        animation: stroke-outline 6s infinite .8s linear;
+    }
+
 }
 
-@keyframes bounceInDown {
+.back-in-down {
+    animation: Intro 800ms linear;
+}
+
+@keyframes Intro {
 
     from,
     60%,
@@ -86,5 +101,19 @@ header:has(+.home-page) {
 
     to {
         transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes stroke-outline {
+    25% {
+        clip-path: circle(var(--line) at 100% 0%);
+    }
+
+    50% {
+        clip-path: circle(var(--line) at 100% 100%);
+    }
+
+    75% {
+        clip-path: circle(var(--line) at 0% 100%);
     }
 }
