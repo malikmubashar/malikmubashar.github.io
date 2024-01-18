@@ -3,7 +3,7 @@ import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
 export default function AboutMe() {
     return (
         <section id='aboutme' className="flex items-center justify-center" style={{
-            minHeight: "60vh"
+            minHeight: "70vh"
         }}>
 
             <div className="bg-sy/5 backdrop-blur border border-sy/40 rounded-3xl shadow shadow-bd/5 stroke-effect flex flex-col sm:flex-row" style={{
