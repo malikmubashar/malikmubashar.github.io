@@ -24,7 +24,7 @@ export default function AboutMe() {
                         }}></div>
                     </div>
                     <h2 className=" text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-tl to-bd from-green-500 p-6 pt-0">Muhammad Mubashar Khalid</h2>
-                    <p className="text-sm p-6 pt-0 opacity-50">Hi, I am Mubashar, a full-stack web developer and a student. I've been diving into web development since 2022, and I am passionate about it. I enjoy exploring new technologies, and I am committed to becoming more productive over time.</p>
+                    <p className="text-sm p-6 pt-0 opacity-50">Hi, I am Mubashar, a full-stack web developer and a student. I have been diving into web development since 2022, and I am passionate about it. I enjoy exploring new technologies, and I am committed to becoming more productive over time.</p>
                 </div>
             </div>
             <div className="w-10 h-10 bg-bd/10 scale-150 absolute -z-10 rounded-full blur"></div>
