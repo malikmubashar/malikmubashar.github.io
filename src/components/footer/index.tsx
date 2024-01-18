@@ -16,8 +16,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className='w-full flex justify-between px-6 text-[10px] items-center py-1.5 bg-bd/50 border-t'>
-                <p className='opacity-50'>2023 Copyright - All Right Reserved</p>
-                    <ThemeButton />
+                <p className='opacity-50'>2024 Copyright - All Right Reserved</p>
+                <ThemeButton />
             </div>
         </footer>
     )

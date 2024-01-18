@@ -1,3 +1,4 @@
+"use client";
 import { pairs } from "./index";
 
 
